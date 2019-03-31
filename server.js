@@ -25,7 +25,7 @@ app.get('/',(req,res)=>
 })
 app.post('/sms',(req,res)=>
 {
-    console.log(req.body.forget)
+    console.log(req.body)
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
