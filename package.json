@@ -1,7 +1,6 @@
 {
   "name": "lecture-16",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "nodemailer": "^6.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwaishkhan55/deploy-app-uwaish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uwaishkhan55/deploy-app-uwaish/issues"
+  },
+  "homepage": "https://github.com/uwaishkhan55/deploy-app-uwaish#readme",
+  "description": ""
 }
