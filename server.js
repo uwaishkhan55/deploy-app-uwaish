@@ -1,6 +1,7 @@
 const express=require('express')
 const app =express()
 const a=10
+
 var nodemailer = require('nodemailer');
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -37,4 +38,4 @@ app.post('/sms',(req,res)=>
     res.redirect('/')
 })
 
-app.listen(9999)
+app.listen(process.env.PORT)
