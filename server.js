@@ -1,5 +1,6 @@
 const express=require('express')
 const app =express()
+const a=10
 var nodemailer = require('nodemailer');
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -25,7 +26,7 @@ app.get('/',(req,res)=>
 })
 app.post('/sms',(req,res)=>
 {
-    console.log(req.body)
+    console.log(req.body.NUMBER)
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
